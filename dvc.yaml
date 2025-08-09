@@ -1,0 +1,13 @@
+stages:
+  train_model:
+    cmd: python Day4/train.py --force
+    deps:
+    - Day4/data/diabetes.csv
+    - Day4/train.py
+    params:
+    - max_depth
+    - n_estimators
+    outs:
+    - Day4/models/model.pkl
+    metrics:
+    - Day4/metrics.json
