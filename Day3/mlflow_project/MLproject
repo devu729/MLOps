@@ -1,0 +1,9 @@
+name: mlflow_project_example
+
+entry_points:
+  main:
+    parameters:
+      n_estimators: {type: int, default: 50}
+      max_depth: {type: int, default: 5}
+    command: >
+      python train.py --n_estimators {n_estimators} --max_depth {max_depth}

@@ -1,1 +1,8 @@
 Day4/data/diabetes.csv
+__pycache__/
+*.pyc
+.dvc/cache/
+.dvc/tmp/
+.git/
+mlruns/
+.vscode/
